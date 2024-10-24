@@ -1,0 +1,79 @@
+/* ในไฟล์ App.css หรือไฟล์ CSS ที่คุณใช้ */
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  margin: 0;
+  overflow: hidden; /* ซ่อน scrollbar ทั้งหมดใน body */
+}
+
+
+
+.header-container {
+  display: flex;
+  align-items: center; /* จัดแนวแนวตั้งให้โลโก้และข้อความอยู่ตรงกลาง */
+  justify-content: center; /* จัดแนวนอนให้โลโก้และข้อความอยู่ตรงกลาง */
+}
+
+.logo {
+  height: 60px; /* ปรับความสูงให้สูงขึ้น */
+  width: auto; /* ปรับให้ความกว้างเป็นอัตโนมัติตามสัดส่วน */
+  margin-right: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+}
+
+h1 {
+  text-align: center;
+}
+
+.color1 {
+  color: #008163; /* สีแรก */
+}
+
+.color-red {
+  color: #EE2526; /* สีแดงสำหรับ Zone checker */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* ช่องว่างระหว่างปุ่ม */
+  margin-bottom: 20px; /* ระยะห่างจากส่วนหัว */
+}
+
+.popup-button {
+  /* ปรับขนาดและระยะห่าง */
+  width: 100px;
+  height: 40px;
+  margin: 10px 5px;
+
+  /* ปรับสีสันและสไตล์ */
+  background-color: #008163; /* สีน้ำเงิน */
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  /* เอฟเฟกต์เมื่อ hover และ active */
+  transition: all 0.3s ease;
+
+  }
+
+.popup-button:hover {
+  background-color: #EE2526; /* สีเมื่อ hover */
+}
+
+.get-location-btn {
+  background-color: #008163; /* สีพื้นหลังปกติ */
+  color: #F7F7F8; /* สีตัวอักษร */
+  padding: 10px 20px; /* ระยะห่าง */
+  border-radius: 5px; /* มุมโค้ง */
+  text-decoration: none; /* เอาเส้นใต้ข้อความออก */
+  transition: background-color 0.3s ease; /* การเปลี่ยนสีเมื่อ hover */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.get-location-btn:hover {
+  background-color: #EE2526; /* สีเมื่อ hover */
+}
+
